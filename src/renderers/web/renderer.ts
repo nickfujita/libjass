@@ -381,6 +381,16 @@ export class WebRenderer extends NullRenderer implements EventSource<string> {
 		sub.style.marginTop = sub.style.marginBottom = `${ (this._scaleY * dialogue.style.marginVertical).toFixed(3) }px`;
 		sub.style.minWidth = `${ (this._subsWrapperWidth - this._scaleX * (dialogue.style.marginLeft + dialogue.style.marginRight)).toFixed(3) }px`;
 
+		sub.style.position = 'absolute';
+		sub.style.left = '0px';
+		console.log('dialogue: ', dialogue);
+		// switch (dialogue.alignment) {
+		// 	case 1: case 4: case 7: sub.style.textAlign = "left"; break;
+		// 	case 2: case 5: case 8: sub.style.textAlign = "center"; break;
+		// 	case 3: case 6: case 9: sub.style.textAlign = "right"; break;
+		// }
+
+
 		const dialogueAnimationStylesElement = document.createElement("style");
 		dialogueAnimationStylesElement.id = `libjass-animation-styles-${ this.id }-${ dialogue.id }`;
 		dialogueAnimationStylesElement.type = "text/css";
