@@ -16,6 +16,7 @@
 	},
 	"main": "lib/libjass.js",
 	"scripts": {
+		"dist": "node ./build.js clean dist",
 		"prepublish": "node ./build.js clean default",
 		"build": "tsc -p ./build/tsconfig.json",
 		"test": "node ./build.js test",

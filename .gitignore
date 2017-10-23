@@ -2,8 +2,6 @@
 /build/typescript/typescript.d.ts
 /build/typescript/*.js
 
-/dist/
-
 
 /node_modules/
 
