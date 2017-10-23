@@ -4,8 +4,6 @@
 
 /dist/
 
-/lib/
-!/lib/libjass.css
 
 /node_modules/
 
